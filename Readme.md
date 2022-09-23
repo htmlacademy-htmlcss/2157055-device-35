@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Егор Первушин](https://up.htmlacademy.ru/htmlcss/35/user/2157055).
-* Наставник: [Дмитрий Гуляев].(https://htmlacademy.ru/profile/dima)
+* Наставник: [Дмитрий Гуляев](https://htmlacademy.ru/profile/dima)
 
 ---
 
