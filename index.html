@@ -10,49 +10,57 @@
       <a class="navigation-logo" href="#">
         <img class="page-header-logo" alt="Логотип магазина 'Девайс'." src="#">
       </a>
-      <nav class="navigation">
-        <ul class="user-navigation-list">
-          <!-- <li class="user-navigation-item">
-            <a class="navigation-link" href="#">
-              Поиск по сайту
-              <span class="button">
-                найти
-              </span>
-            </a>
-          </li> -->
-          <li class="user-navigation-item">
-            <a class="login-link" href="#">
-              войти
-            </a>
+      <form action="https://echo.htmlacademy.ru/" method="get">
+        <input name="search" placeholder="Поиск по сайту" type="search">
+        <button type="submit">Найти</button>
+      </form>
+      <a class="personal-area-link" href="#">
+        Войти
+      </a>
+      <a class="compare-link" href="#">
+        сравнить
+      </a>
+      <a class="bin-link" href="#">
+        корзина
+      </a>
+      <div class="header-product-categories">
+        <button class="catalog-button">
+          каталог товаров
+        </button>
+        <ul class="header-categories-list visually-hidden">
+          <li class="header-categories-item">
+            <a class="header-category" href="#">Виртуальная реальность</a>
           </li>
-          <li class="user-navigation-item">
-            <a class="compare-link" href="#">
-              сравнить
-            </a>
+          <li class="header-categories-item">
+            <a class="header-category" href="#">Моноподы для селфи</a>
           </li>
-          <li class="user-navigation-item">
-            <a class="bin-link" href="#">
-              корзина
-            </a>
+          <li class="header-categories-item">
+            <a class="header-category" href="#">Экшн-камеры</a>
+          </li>
+          <li class="header-categories-item">
+            <a class="header-category" href="#">Фитнес-браслеты</a>
+          </li>
+          <li class="header-categories-item">
+            <a class="header-category" href="#">Умные часы</a>
+          </li>
+          <li class="header-categories-item">
+            <a class="header-category" href="#">Квадрокоптеры</a>
           </li>
         </ul>
-        <ul class="main-navigation-list">
-          <li class="main-navigation-item">
-            <a class="login-link" href="#">
-              каталог товаров
-            </a>
-          </li>
-          <li class="main-navigation-item">
+      </div>
+      <nav class="navigation">
+        <ul class="page-navigation-list">
+          <li class="page-navigation-item">
             <a class="login-link" href="#">
               доставка
             </a>
           </li>
-          <li class="main-navigation-item">
+          <li class="page-navigation-item">
             <a class="login-link" href="#">
               гарантии
             </a>
           </li>
-          <li class="main-navigation-item">
+          <li class="page-navigation-item">
             <a class="login-link" href="#">
               контакты
             </a>
@@ -67,10 +75,10 @@
         <div class="poduct-card">
           <img class="popular-product" alt="Квадрокоптер" src="#">
           <button class="slider-button slider-prev" type="button">
-            <span class="visually-hidden">Предыдущее фото</span>
+            <span class="visually-hidden">Предыдущий товар</span>
           </button>
           <button class="slider-button slider-next" type="button">
-            <span class="visually-hidden">Следующее фото</span>
+            <span class="visually-hidden">Следующий товар</span>
           </button>
           <h3 class="advantages-title">
             Порхает как бабочка,жалит как пчела!
@@ -95,49 +103,57 @@
         <h2 class="visually-hidden">Категории товаров</h2>
         <ul class="product-categories-list">
           <li class="product-categories-item">
-            <img class="product-categories-sign" alt="Очки виртуальной реальности" src="#">
-            <p>Виртуальная реальность</p>
+            <a class="main-product-category" href="#">Виртуальная реальность</a>
           </li>
           <li class="product-categories-item">
-            <img class="product-categories-sign" alt="Селфи-палка" src="#">
-            <p>Моноподы для селфи</p>
+            <a class="main-product-category" href="#">Моноподы для селфи</a>
           </li>
           <li class="product-categories-item">
-            <img class="product-categories-sign" alt="Экшн-камера" src="#">
-            <p>Экшн-камеры</p>
+            <a class="main-product-category" href="#">Экшн-камеры</a>
           </li>
           <li class="product-categories-item">
-            <img class="product-categories-sign" alt="Фитнес-браслет" src="#">
-            <p class="category-name">Фитнес-браслеты</p>
+            <a class="main-product-category" href="#">Фитнес-браслеты</a>
           </li>
           <li class="product-categories-item">
-            <img class="product-categories-sign" alt="Умные часы" src="#">
-            <p class="category-name">Умные часы</p>
+            <a class="main-product-category" href="#">Умные часы</a>
           </li>
           <li class="product-categories-item">
-            <img class="product-categories-sign" alt="Квадрокоптер" src="#">
-            <p class="category-name">Квадрокоптеры</p>
+            <a class="main-product-category" href="#">Квадрокоптеры</a>
           </li>
         </ul>
       </section>
       <section class="extra-info">
-        <ul class="extra-info-list">
+        <ul class="extra-info-title-list">
           <li class="extra-info-item">
-            <h3 class="extra-info-title">Доставка</h3>
-            <div class="extra-info-block">
-              <p class="extra-info-discription">
-                Доставка
-                Мы с удовольствием доставим ваш товар прямо
-                к вашему подъезду совершенно бесплатно! Ведь
-                мы неплохо заработаем, поднимая его на ваш этаж.
-              </p>
-            </div>
+            <button><h3 class="extra-info-title">Доставка</h3></button>
           </li>
           <li class="extra-info-item">
-            <h3 class="extra-info-title">Гарантия</h3>
+            <button><h3 class="extra-info-title">Гарантия</h3></button>
           </li>
           <li class="extra-info-item">
-            <h3 class="extra-info-title">Кредит</h3>
+            <button><h3 class="extra-info-title">Кредит</h3></button>
+          </li>
+        </ul>
+        <ul class="extra-info-description-list visually-hidden">
+          <li class="extra-info-description-item">
+            <h2 class="extra-description-title">Доставка</h2>
+            <p class="extra-descriptoin">
+              Мы с удовольствием доставим ваш товар прямо
+              к вашему подъезду совершенно бесплатно! Ведь
+              мы неплохо заработаем, поднимая его на ваш этаж.
+            </p>
+          </li>
+          <li class="extra-info-description-item">
+            <h2 class="extra-description-title">Гарантия</h2>
+            <p class="extra-descriptoin">
+              #
+            </p>
+          </li>
+          <li class="extra-info-description-item">
+            <h2 class="extra-description-title">Кредит</h2>
+            <p class="extra-descriptoin">
+              #
+            </p>
           </li>
         </ul>
       </section>
