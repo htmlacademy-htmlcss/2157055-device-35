@@ -1,1 +1,143 @@
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/raleway/raleway-800.woff2") format("woff2");
+  font-display: swap;
+}
 
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/rubik/rubik-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/rubik/rubik-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  background-color: white;
+  color: black;
+}
+
+.page-header {
+  background-color: #ffe17f;
+  color: inherit;
+}
+
+.page-header a {
+  color: black;
+  text-decoration: none;
+}
+
+.personal-area-link,
+.compare-link,
+.bin-link {
+  text-align: center;
+}
+
+.catalog-button,
+.page-navigation-list,
+.about-product {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.catalog-button {
+  background-color: #ffe17f;
+}
+
+.advantages-title{
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.advantages-description p {
+  color: #444444;
+}
+
+.about-product {
+  color: #000000;
+  background: #FFE17F;
+  text-decoration: none;
+}
+
+.characteristics-list {
+  color: #444444;
+}
+
+.distance {
+  font-size: 36px;
+  line-height: 30px;
+  color: #000;
+}
+
+.product-categories-list a{
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000;
+  text-decoration: none;
+}
+
+.extra-info-title-list button{
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #000000;
+  background: #FFE17F;
+  text-decoration: none;
+}
+
+.extra-description-title {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+}
+
+.extra-descriptoin {
+  color: #444444;
+  background-color: #F0F0F0;
+}
+
+.delivery {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #000;
+  text-decoration: none;
+  background-color: #F0F0F0;
+}
