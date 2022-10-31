@@ -22,7 +22,15 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -32,6 +40,116 @@ body {
   color: black;
 }
 
+.page-header-logo{
+  display: block;
+  width: 145px;
+}
+
+.top-of-the-header,
+.bottom-of-the-header,
+.logo-container{
+  display: flex;
+  width: 1040px;
+  margin: 0 auto;
+}
+
+.search {
+  margin: 0;
+  padding: 0;
+  width: 517px;
+}
+
+.personal-area-link{
+  width: 81px;
+  padding: 0;
+  margin-left: 26px;
+  margin-right: 150px;
+}
+
+.compare-link{
+  width: 105px;
+  padding: 0;
+  margin-right: 36px;
+}
+
+.bin-link{
+  width: 99px;
+  padding: 0;
+  margin-left: auto;
+}
+
+.catalog-button {
+  width: 293px;
+}
+
+.navigation {
+  width: 471px;
+  margin-left: auto;
+}
+
+.page-container {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.product-card {
+  display: flex;
+}
+
+.popular-product {
+  display: block;
+  width: 560px;
+  margin: 0;
+  padding: 0;
+}
+
+.product-discription {
+  width: 560px;
+  margin-left: auto;
+  padding: 0;
+}
+
+.characteristics-list,
+.extra-info {
+  display: flex;
+}
+
+.characteristics-item {
+  padding: 0;
+  margin: 0;
+  margin-right: 20px;
+}
+
+.product-categories-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.extra-info-title-list {
+  width: 280px;
+  padding: 0;
+  margin-top: 64px;
+  margin-bottom: 65px;
+}
+
+.extra-info-description-list {
+  width: 694px;
+  padding: 0;
+  margin-left: 126px;
+}
+
+.delivery {
+  display: block;
+  margin: 0 auto;
+}
+
+.common-info {
+  display: flex;
+}
+
+.main-container {
+  flex-grow: 1;
+}
 .page-header {
   background-color: #ffe17f;
   color: inherit;
