@@ -78,10 +78,6 @@ body {
   margin-left: auto;
 }
 
-.catalog-button {
-  width: 293px;
-}
-
 .navigation {
   width: 471px;
   margin-left: auto;
@@ -138,13 +134,69 @@ body {
   margin-left: 126px;
 }
 
-.delivery {
-  display: block;
+.common-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info {
+  width: 520px;
+}
+
+.space-in-text {
+  line-height: 30px;
+}
+
+.delivery-ways-list{
+  width: 182px;
+  padding-left: 37.5px;
+}
+
+.contacts-address-text{
+  margin: 0;
+}
+
+.contacts-schedule {
+  padding: 0;
+}
+
+.top-of-mailing-list,
+.bottom-of-mailing-list {
+  display: flex;
+}
+
+.mailing-list-title {
+  width: 348px;
+}
+
+.mailing-list-discription {
+  width: 560px;
+  margin-left: auto;
+}
+
+.mailing-list-form {
+  width: 810px;
+}
+
+.mailing-list-mark {
+  margin-bottom: 0;
+  margin-left: auto;
+}
+
+.page-footer-container {
+  display: flex;
+  width: 1140px;
   margin: 0 auto;
 }
 
-.common-info {
-  display: flex;
+.footer-adress {
+  width: 239px;
+  margin-right: 119px;
+}
+
+.footer-media {
+  width: 444px;
+  margin-right: 183px;
 }
 
 .main-container {
@@ -180,6 +232,8 @@ body {
 
 .catalog-button {
   background-color: #ffe17f;
+
+  width: 293px;
 }
 
 .advantages-title{
@@ -258,6 +312,9 @@ body {
   color: #000;
   text-decoration: none;
   background-color: #F0F0F0;
+
+  display: block;
+  margin: 0 auto;
 }
 
 .about-company-title,
@@ -273,6 +330,8 @@ body {
 
 .about-company-description {
   color: #444444;
+
+  width: 497px;
 }
 
 .delivery-ways-list {
@@ -292,11 +351,15 @@ body {
   color: #000000;
   background: #FFE17F;
   text-decoration: none;
+
+  width: 270px;
 }
 
 
 .contacts {
   color: #444444;
+
+  width: 532px;
 }
 
 .contacts h3 {
