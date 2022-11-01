@@ -60,7 +60,7 @@ body {
 }
 
 .personal-area-link{
-  width: 81px;
+  min-width: 81px;
   padding: 0;
   margin-left: 26px;
   margin-right: 150px;
@@ -205,6 +205,14 @@ body {
 .page-header {
   background-color: #ffe17f;
   color: inherit;
+}
+
+.catalog-products {
+  display: flex;
+}
+
+.right-column {
+  width: 840px;
 }
 
 .page-header a {
