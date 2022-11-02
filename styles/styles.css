@@ -40,17 +40,14 @@ body {
   color: black;
 }
 
-.page-header-logo{
-  display: block;
-  width: 145px;
+.page-header-container{
+  width: 1040px;
+  margin: 0 auto;
 }
 
 .top-of-the-header,
-.bottom-of-the-header,
-.logo-container{
+.bottom-of-the-header {
   display: flex;
-  width: 1040px;
-  margin: 0 auto;
 }
 
 .search {
@@ -149,7 +146,7 @@ body {
 
 .delivery-ways-list{
   width: 182px;
-  padding-left: 37.5px;
+  padding-left: 34px;
 }
 
 .contacts-address-text{
