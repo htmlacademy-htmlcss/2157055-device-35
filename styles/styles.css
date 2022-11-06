@@ -22,7 +22,15 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -32,9 +40,176 @@ body {
   color: black;
 }
 
+.page-header-container{
+  width: 1040px;
+  margin: 0 auto;
+}
+
+.top-of-the-header,
+.bottom-of-the-header {
+  display: flex;
+}
+
+.search {
+  margin: 0;
+  padding: 0;
+  width: 517px;
+}
+
+.personal-area-link{
+  min-width: 81px;
+  padding: 0;
+  margin-left: 26px;
+  margin-right: 150px;
+}
+
+.compare-link{
+  width: 105px;
+  padding: 0;
+  margin-right: 36px;
+}
+
+.bin-link{
+  width: 99px;
+  padding: 0;
+  margin-left: auto;
+}
+
+.navigation {
+  width: 471px;
+  margin-left: auto;
+}
+
+.page-container {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.product-card {
+  display: flex;
+}
+
+.popular-product {
+  display: block;
+  width: 560px;
+  margin: 0;
+  padding: 0;
+}
+
+.product-discription {
+  width: 560px;
+  margin-left: auto;
+  padding: 0;
+}
+
+.characteristics-list,
+.extra-info {
+  display: flex;
+}
+
+.characteristics-item {
+  padding: 0;
+  margin: 0;
+  margin-right: 20px;
+}
+
+.product-categories-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.extra-info-title-list {
+  width: 280px;
+  padding: 0;
+  margin-top: 64px;
+  margin-bottom: 65px;
+}
+
+.extra-info-description-list {
+  width: 694px;
+  padding: 0;
+  margin-left: 126px;
+}
+
+.common-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.info {
+  width: 520px;
+}
+
+.space-in-text {
+  line-height: 30px;
+}
+
+.delivery-ways-list{
+  width: 182px;
+  padding-left: 34px;
+}
+
+.contacts-address-text{
+  margin: 0;
+}
+
+.contacts-schedule {
+  padding: 0;
+}
+
+.top-of-mailing-list,
+.bottom-of-mailing-list {
+  display: flex;
+}
+
+.mailing-list-title {
+  width: 348px;
+}
+
+.mailing-list-discription {
+  width: 560px;
+  margin-left: auto;
+}
+
+.mailing-list-form {
+  width: 810px;
+}
+
+.mailing-list-mark {
+  margin-bottom: 0;
+  margin-left: auto;
+}
+
+.page-footer-container {
+  display: flex;
+  width: 1140px;
+  margin: 0 auto;
+}
+
+.footer-adress {
+  width: 239px;
+  margin-right: 119px;
+}
+
+.footer-media {
+  width: 444px;
+  margin-right: 183px;
+}
+
+.main-container {
+  flex-grow: 1;
+}
 .page-header {
   background-color: #ffe17f;
   color: inherit;
+}
+
+.catalog-products {
+  display: flex;
+}
+
+.right-column {
+  width: 840px;
 }
 
 .page-header a {
@@ -62,6 +237,8 @@ body {
 
 .catalog-button {
   background-color: #ffe17f;
+
+  width: 293px;
 }
 
 .advantages-title{
@@ -140,6 +317,9 @@ body {
   color: #000;
   text-decoration: none;
   background-color: #F0F0F0;
+
+  display: block;
+  margin: 0 auto;
 }
 
 .about-company-title,
@@ -155,6 +335,8 @@ body {
 
 .about-company-description {
   color: #444444;
+
+  width: 497px;
 }
 
 .delivery-ways-list {
@@ -174,11 +356,15 @@ body {
   color: #000000;
   background: #FFE17F;
   text-decoration: none;
+
+  width: 270px;
 }
 
 
 .contacts {
   color: #444444;
+
+  width: 532px;
 }
 
 .contacts h3 {
