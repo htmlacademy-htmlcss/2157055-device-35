@@ -271,17 +271,70 @@ body {
   padding: 0;
   margin-top: 62px;
   margin-bottom: 77px;
-  margin-right: 119px;
+  margin-right: 79px;
 }
 
 .footer-address address {
-  width: 240px;
+  width: 280px;
   margin-bottom: 64px;
 }
 
 .footer-media {
-  width: 444px;
-  margin-right: 183px;
+  min-width: 450px;
+}
+
+.footer-media-list {
+  display: flex;
+  list-style-type: none;
+  margin-top: 137px;
+  margin-bottom: 62px;
+  padding: 0;
+}
+
+.footer-media-item {
+  margin-right: 35px;
+}
+
+.footer-media-item:last-child {
+  margin-right: 0;
+
+}
+
+.social-media-list {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  justify-content: center;
+
+}
+
+.social-media-item {
+  border:
+    1px
+    solid
+    greenyellow;
+    /* для видимости, после добавдения иконок - уберу */
+  min-width: 40px;
+  min-height: auto;
+  margin-right: 15px;
+}
+
+.social-media-item:last-child {
+  margin-right: 0;
+}
+
+.footer-phone {
+  min-width: 175px;
+  margin-left: auto;
+  margin-top: 140px;
+  margin-bottom: 65px;
+
+}
+
+.executor-logo {
+  display: block;
+  padding: 0;
+  margin-left: auto;
 }
 
 .main-container {
@@ -516,9 +569,15 @@ address {
 }
 
 .footer-contacts-phone {
+  display: block;
   color: white;
   font-size: 16px;
   line-height: 20px;;
+  margin-bottom: 63px;
+}
+
+.executor {
+  display: block;
 }
 
 .main-inner {
