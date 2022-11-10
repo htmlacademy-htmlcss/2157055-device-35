@@ -13,7 +13,7 @@
         <img class="page-header-logo" alt="Логотип магазина 'Девайс'." src="/images/logo-header.svg" width="145" height="36">
       </a>
       <div class="top-of-the-header">
-      <form action="https://echo.htmlacademy.ru/" method="get">
+      <form class="search" action="https://echo.htmlacademy.ru/" method="get">
         <input name="search" placeholder="Поиск по сайту" type="search">
         <button type="submit">Найти</button>
       </form>
@@ -87,7 +87,7 @@
               <a class="breadcrumbs-link" href="index.html">Главная</a>
             </li>
             <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link" href="#">Каталог</a>
+              <a class="breadcrumbs-link" href="#">Каталог товаров</a>
             </li>
             <li class="breadcrumbs-item">
               <a class="breadcrumbs-link" href="#">Моноподы для селфи</a>
@@ -162,12 +162,16 @@
           </form>
           </div>
           <div class="right-column">
-          <h2 class="sort-title">Сортировка:</h2>
-          <select class="select-control" aria-label="Сортировка">
-          <option value="popular">Популярные</option>
-          <option value="cheap">Дешевые</option>
-          <option value="expensive">Дорогие</option>
-          </select>
+          <div class="sort-container">
+            <h2 class="sort-title">Сортировка:</h2>
+            <select class="select-control" aria-label="Сортировка">
+            <option value="popular">Популярные</option>
+            <option value="cheap">Дешевые</option>
+            <option value="expensive">Дорогие</option>
+            </select>
+            <button class="change-direction-button-up visually-hidden">Up</button>
+            <button class="change-direction-button-down visually-hidden">Down</button>
+          </div>
           <div class="cards-field">
             <ul class="product-list">
               <li class="product-card">
@@ -223,7 +227,7 @@
                   </li>
                   <li class="pagination-item">
                     <a class="pagination-swap pagination-next" href="#">
-                      <span class="visually-hidden">Следующая страница</span>
+                      вперед
                     </a>
                   </li>
                 </ul>
@@ -234,43 +238,43 @@
     </main>
     <footer class="page-footer">
       <div class="page-footer-container">
-      <section class="footer-adress">
-        <img class="footer-logo" alt="Девайс" src="/images/logo-footer.svg" width="145" height="36">
-        <address class="footer-address">
-          Санкт-Петербург, набережная реки Карповки, 5, литера П.
-        </address>
-      </section>
-      <section class="footer-media">
-        <ul class="footer-media-list">
-          <li class="footer-media-item">
-            <a class="footer-delivery" href="#">доставка</a>
-          </li>
-          <li class="footer-media-item">
-            <a class="footer-guarantee" href="#">гарантия</a>
-          </li>
-          <li class="footer-media-item">
-            <a class="footer-contacts" href="#">контакты</a>
-          </li>
-        </ul>
-        <ul class="social-media-list">
-          <li class="social-media-item">
-            <a class="footer-telegram visually-hidden" href="https://t.me/htmlacademy">телеграм</a>
-          </li>
-          <li class="social-media-item">
-            <a class="footer-youtube visually-hidden" href="https://www.youtube.com/user/htmlacademyru">ютуб</a>
-          </li>
-          <li class="social-media-item">
-            <a class="footer-twitter visually-hidden" href="https://twitter.com/htmlacademy_ru">твиттер</a>
-          </li>
-        </ul>
-      </section>
-      <section class="footer-phone">
-        <a class="footer-contacts-phone" href="tel:+78128121212">Тел.:+7 (812) 812-12-12</a>
-        <a class="executor" href="https://htmlacademy.ru/">
-          <img class="executor-logo" alt="html.academy" src="/images/logo-academy-footer.svg" width="115" height="33">
-        </a>
-      </section>
-    </div>
+        <section class="footer-address">
+          <img class="footer-logo" alt="Девайс" src="images/logo-footer.svg" width="145" height="36">
+          <address>
+            Санкт-Петербург, набережная реки Карповки, 5, литера П.
+          </address>
+        </section>
+        <section class="footer-media">
+          <ul class="footer-media-list">
+            <li class="footer-media-item">
+              <a class="footer-delivery" href="#">доставка</a>
+            </li>
+            <li class="footer-media-item">
+              <a class="footer-guarantee" href="#">гарантия</a>
+            </li>
+            <li class="footer-media-item">
+              <a class="footer-contacts" href="#">контакты</a>
+            </li>
+          </ul>
+          <ul class="social-media-list">
+            <li class="social-media-item">
+              <a class="footer-telegram visually-hidden" href="https://t.me/htmlacademy">телеграм</a>
+            </li>
+            <li class="social-media-item">
+              <a class="footer-youtube visually-hidden" href="https://www.youtube.com/user/htmlacademyru">ютуб</a>
+            </li>
+            <li class="social-media-item">
+              <a class="footer-twitter visually-hidden" href="https://twitter.com/htmlacademy_ru">твиттер</a>
+            </li>
+          </ul>
+        </section>
+        <section class="footer-phone">
+          <a class="footer-contacts-phone" href="tel:+78128121212">Тел.:+7 (812) 812-12-12</a>
+          <a class="executor" href="https://htmlacademy.ru/">
+            <img class="executor-logo" alt="html.academy" src="images/logo-academy-footer.svg" width="115" height="33">
+          </a>
+        </section>
+      </div>
     </footer>
   </body>
 </html>

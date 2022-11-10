@@ -74,9 +74,24 @@ body {
 
 .personal-area-link{
   display: block;
-  min-width: 231px;
+  min-width: 146px;
   padding: 0;
   margin-left: 26px;
+  margin-right: 28px;
+}
+
+.personal-area-link-login {
+  display: block;
+  min-width: 81px;
+  padding-right: 150px;
+  margin-right: 26px;
+}
+
+.personal-area-exit-link {
+  display: block;
+  min-width: 56px;
+  padding: 0;
+  margin-right: 26px;
 }
 
 .compare-link{
@@ -360,12 +375,20 @@ body {
   color: inherit;
 }
 
+.sort-title {
+  margin-right: 206px;
+}
+
 .catalog-products {
   display: flex;
 }
 
 .right-column {
   width: 840px;
+}
+
+.product-list {
+  list-style-type: none;
 }
 
 .page-header a {
@@ -599,24 +622,63 @@ address {
   background-color: #F0F0F0;
 }
 
+.inner-header {
+  background-color: #fff;
+  padding: 35px;
+}
+
 .inner-header-title {
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 800;
   font-size: 50px;
   line-height: 50px;
+
+  margin-bottom: 16px ;
 }
 
 .breadcrumbs {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
   font-size: 16px;
   line-height: 20px;
   color: #000000;
+}
+
+.breadcrumbs-item {
+  margin-right: 36px;;
 }
 
 .breadcrumbs-link {
   color: inherit;
   text-decoration: none;
 }
+
+.sort-container {
+  display: flex;
+  padding: 20px 40px;
+}
+
+.change-direction-button-up {
+  padding: 0;
+  margin: 0;
+  min-width: 30px;
+  min-height: 30px;
+  margin-left: auto;
+  color: #000;
+}
+
+.change-direction-button-down {
+  margin: 0;
+  padding: 0;
+  min-width: 30px;
+  min-height: 30px;
+}
+
+
+
 
 .filter-title,
 .sort-title {
@@ -687,6 +749,12 @@ address {
 
 .pagination {
   background-color: #EBEBEB;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 .pagination-swap {
@@ -704,6 +772,8 @@ address {
 }
 
 .pagination-prev {
+  display: block;
+  padding: 25px;
   color: #444444;
   opacity: 0.3;
 }
@@ -712,11 +782,30 @@ address {
   font-size: 16px;
   line-height: 20px;
   text-decoration: none;
-  color: #444444;
+  color: #000;
   opacity: 0.3;
   text-align: center;
 }
 
 .pagination-current {
   opacity: 0.6;
+  display: block;
+}
+
+.pagination-link {
+  display: block;
+  box-sizing: border-box;
+  width: 40px;
+  height: 40px;
+  padding: 10px 16px;
+  background-color: inherit;
+}
+
+.pagination-item:nth-child(1) {
+  margin-right: auto;
+}
+
+.pagination-item:last-child {
+  padding: 25px;
+  margin-left: auto;
 }
