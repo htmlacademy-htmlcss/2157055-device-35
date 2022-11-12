@@ -40,6 +40,17 @@ body {
   color: black;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .page-header-container{
   width: 1040px;
   margin: 0 auto;
@@ -48,6 +59,11 @@ body {
 .top-of-the-header,
 .bottom-of-the-header {
   display: flex;
+  flex-wrap: wrap;
+}
+
+.top-of-the-header{
+  margin-bottom: 30px;
 }
 
 .search {
@@ -57,10 +73,25 @@ body {
 }
 
 .personal-area-link{
-  min-width: 81px;
+  display: block;
+  min-width: 146px;
   padding: 0;
   margin-left: 26px;
-  margin-right: 150px;
+  margin-right: 28px;
+}
+
+.personal-area-link-login {
+  display: block;
+  min-width: 81px;
+  padding-right: 150px;
+  margin-right: 26px;
+}
+
+.personal-area-exit-link {
+  display: block;
+  min-width: 56px;
+  padding: 0;
+  margin-right: 26px;
 }
 
 .compare-link{
@@ -76,8 +107,35 @@ body {
 }
 
 .navigation {
-  width: 471px;
+  min-width: 471px;
   margin-left: auto;
+}
+
+.page-navigation-list {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.page-navigation-item:not(last-child){
+  display: block;
+  margin-right: 41px;
+  padding: 0;
+}
+
+.page-navigation-item:last-child {
+  padding: 0;
+  margin: 0;
+}
+
+.login-link {
+  padding: 14px;
+}
+
+.login-link:last-child {
+  padding-right: 0;
 }
 
 .page-container {
@@ -87,6 +145,7 @@ body {
 
 .product-card {
   display: flex;
+  align-items: center;
 }
 
 .popular-product {
@@ -105,6 +164,12 @@ body {
 .characteristics-list,
 .extra-info {
   display: flex;
+  list-style-type: none;
+  margin: 0;
+}
+
+.extra-info {
+  align-items: center;
 }
 
 .characteristics-item {
@@ -116,6 +181,11 @@ body {
 .product-categories-list {
   display: flex;
   justify-content: space-between;
+  list-style-type: none;
+  padding: 0;
+  margin-top: 70px;
+  margin-bottom: 70px;
+
 }
 
 .extra-info-title-list {
@@ -123,21 +193,40 @@ body {
   padding: 0;
   margin-top: 64px;
   margin-bottom: 65px;
+  list-style-type: none;
+}
+
+.extra-info-title {
+  width: 160px;
+  margin-bottom: 35px;
+  margin-right: 120px;
+}
+
+.extra-description-title {
+  margin: 0;
+  margin-bottom: 34px;
 }
 
 .extra-info-description-list {
   width: 694px;
   padding: 0;
   margin-left: 126px;
+  list-style-type: none;
+}
+
+.extra-info-description-list {
+  margin: 72px 63px 116px;
 }
 
 .common-info {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 70px;
 }
 
 .info {
   width: 520px;
+  margin-right: 108px;
 }
 
 .space-in-text {
@@ -149,17 +238,33 @@ body {
   padding-left: 34px;
 }
 
+.delivery-ways-item {
+  margin-bottom: 19px;
+}
+
 .contacts-address-text{
   margin: 0;
 }
 
 .contacts-schedule {
   padding: 0;
+  margin-bottom: 30px;
+  list-style-type: none;
+}
+
+.contacts-subtitle {
+  margin-top: 30px;
+  margin-bottom: 15px;
 }
 
 .top-of-mailing-list,
 .bottom-of-mailing-list {
   display: flex;
+  align-items: center;
+}
+
+.bottom-of-mailing-list {
+  padding-bottom: 56px;
 }
 
 .mailing-list-title {
@@ -186,14 +291,80 @@ body {
   margin: 0 auto;
 }
 
-.footer-adress {
-  width: 239px;
-  margin-right: 119px;
+.footer-logo {
+  margin-bottom: 35px;
+}
+
+.footer-address {
+  padding: 0;
+  margin-top: 62px;
+  margin-bottom: 77px;
+  margin-right: 79px;
+}
+
+.footer-address address {
+  width: 280px;
+  margin-bottom: 64px;
 }
 
 .footer-media {
-  width: 444px;
-  margin-right: 183px;
+  min-width: 450px;
+}
+
+.footer-media-list {
+  display: flex;
+  list-style-type: none;
+  margin-top: 137px;
+  margin-bottom: 62px;
+  padding: 0;
+}
+
+.footer-media-item {
+  margin-right: 35px;
+}
+
+.footer-media-item:last-child {
+  margin-right: 0;
+
+}
+
+.social-media-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+  justify-content: center;
+  margin-bottom: 61px;
+
+}
+
+.social-media-item {
+  border:
+    1px
+    solid
+    greenyellow;
+    /* для видимости, после добавдения иконок - уберу */
+  min-width: 40px;
+  min-height: 40px;
+  margin-right: 15px;
+}
+
+.social-media-item:last-child {
+  margin-right: 0;
+}
+
+.footer-phone {
+  min-width: 175px;
+  margin-left: auto;
+  margin-top: 140px;
+  margin-bottom: 65px;
+
+}
+
+.executor-logo {
+  display: block;
+  padding: 0;
+  margin-left: auto;
 }
 
 .main-container {
@@ -204,6 +375,10 @@ body {
   color: inherit;
 }
 
+.sort-title {
+  margin-right: 206px;
+}
+
 .catalog-products {
   display: flex;
 }
@@ -212,12 +387,15 @@ body {
   width: 840px;
 }
 
+.product-list {
+  list-style-type: none;
+}
+
 .page-header a {
   color: black;
   text-decoration: none;
 }
 
-.personal-area-link,
 .compare-link,
 .bin-link {
   text-align: center;
@@ -320,6 +498,9 @@ body {
 
   display: block;
   margin: 0 auto;
+  margin-top: 70px;
+  margin-bottom: 70px;
+  padding: 40px 125px;
 }
 
 .about-company-title,
@@ -337,6 +518,8 @@ body {
   color: #444444;
 
   width: 497px;
+  padding: 0;
+  margin-bottom: 30px;
 }
 
 .delivery-ways-list {
@@ -424,13 +607,24 @@ address {
 }
 
 .footer-contacts-phone {
+  display: block;
   color: white;
   font-size: 16px;
   line-height: 20px;;
+  margin-bottom: 63px;
+}
+
+.executor {
+  display: block;
 }
 
 .main-inner {
   background-color: #F0F0F0;
+}
+
+.inner-header {
+  background-color: #fff;
+  padding: 35px;
 }
 
 .inner-header-title {
@@ -439,18 +633,52 @@ address {
   font-weight: 800;
   font-size: 50px;
   line-height: 50px;
+
+  margin-bottom: 16px ;
 }
 
 .breadcrumbs {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
   font-size: 16px;
   line-height: 20px;
   color: #000000;
+}
+
+.breadcrumbs-item {
+  margin-right: 36px;;
 }
 
 .breadcrumbs-link {
   color: inherit;
   text-decoration: none;
 }
+
+.sort-container {
+  display: flex;
+  padding: 20px 40px;
+}
+
+.change-direction-button-up {
+  padding: 0;
+  margin: 0;
+  min-width: 30px;
+  min-height: 30px;
+  margin-left: auto;
+  color: #000;
+}
+
+.change-direction-button-down {
+  margin: 0;
+  padding: 0;
+  min-width: 30px;
+  min-height: 30px;
+}
+
+
+
 
 .filter-title,
 .sort-title {
@@ -521,6 +749,12 @@ address {
 
 .pagination {
   background-color: #EBEBEB;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
 .pagination-swap {
@@ -538,6 +772,8 @@ address {
 }
 
 .pagination-prev {
+  display: block;
+  padding: 25px;
   color: #444444;
   opacity: 0.3;
 }
@@ -546,11 +782,30 @@ address {
   font-size: 16px;
   line-height: 20px;
   text-decoration: none;
-  color: #444444;
+  color: #000;
   opacity: 0.3;
   text-align: center;
 }
 
 .pagination-current {
   opacity: 0.6;
+  display: block;
+}
+
+.pagination-link {
+  display: block;
+  box-sizing: border-box;
+  width: 40px;
+  height: 40px;
+  padding: 10px 16px;
+  background-color: inherit;
+}
+
+.pagination-item:nth-child(1) {
+  margin-right: auto;
+}
+
+.pagination-item:last-child {
+  padding: 25px;
+  margin-left: auto;
 }
